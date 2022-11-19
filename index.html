@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>chess</title>
+
+	<script src="p5.js"></script>
+	<script src="board.js"></script>
+	<script src="sketch.js"></script>
+
+
+
+</head>
+
+<body>
+	<button onclick="SaveFEN()">Save FEN</button>
+	<button onclick="undo()">undo</button>
+	<button onclick="redo()">redo</button>
+	<button onclick="board.play()">play</button>
+
+	<div id="popUpDiv" >
+	<select id="popupSelect" onselect="sel">
+		<option value="Queen">Queen</option>
+		<option value="Knight">Knight</option>
+		<option value="Third">Third</option>
+	</select>
+
+
+
+</body>
+
+</html>
